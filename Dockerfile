@@ -15,3 +15,6 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
 RUN python -m pip install jupyterlab
+
+COPY requirements.txt /root/
+RUN pip install -r /root/requirements.txt

@@ -32,11 +32,6 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 docker exec -it ollama ollama run dsasai/llama3-elyza-jp-8b
 ```
 
-### Python依存パッケージのインストール
-```bash
-pip install -r requirements.txt
-```
-
 ### UIの起動
 ```bash
 streamlit run autogen_ollama.py
